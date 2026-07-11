@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Header area */
+.header {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+/* Upper-left logo */
+.logo-left {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 250px;
+    height: auto;
+}
+
+/* Upper-center logo */
+.logo-center {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 210px;
+}
+
+img {
+    width: 30%;
+    /* margin: 1.6666%; this can be used, but there is also a calc solution */
+    margin: calc(20%/6);
+}
+
+h1 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Roboto;
+}
+
+h2 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Roboto;
+}
+
+.page-centered-text {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.red-color {
+    color: red;
+}
