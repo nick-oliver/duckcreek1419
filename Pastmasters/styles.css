@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
@@ -21,47 +15,16 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background: white;
+    /* background: rgb(107, 175, 238); */
+    background-image: url('../images/background2.jpg');
     min-height: 100vh;
     position: relative;
-}
-
-/* Header area */
-.header {
-    position: relative;
-    height: 250px;
-    width: 100%;
-    margin-bottom: 90px;
-}
-
-/* Upper-left logo */
-.logo-left {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 250px;
-    height: auto;
-}
-
-/* Upper-center logo */
-.logo-center {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    height: 210px;
-}
-
-img {
-    width: 30%;
-    /* margin: 1.6666%; this can be used, but there is also a calc solution */
-    margin: calc(20%/6);
 }
 
 h1 {
     display: block;
     width: auto;
+    color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -69,32 +32,42 @@ h1 {
     font-family: Roboto;
 }
 
-h2 {
+h4 {
     display: block;
     width: auto;
+    color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     font-family: Roboto;
 }
 
-.page-centered-text {
+h5 {
     display: block;
     width: auto;
+    color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 14px;
     font-family: Roboto;
+}
+
+.pmlist {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 
 .red-color {
     color: red;
 }
 
-@media (max-width: 768px) {
-    .logo-left {
-        display: none;
-    }
+.green-color {
+    color: green;
+}
+
+.chartreuse-color {
+    color: chartreuse
 }
