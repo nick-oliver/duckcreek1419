@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    /* background: rgb(107, 175, 238); */
+    background-image: url(../images/DClogoBGe1.jpg);
+    min-height: 100vh;
+    position: relative;
+}
+
+h1 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Roboto;
+}
+
+h4 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+h5 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+.name-data {
+    font-size: 20px;
+}
+
+.red-color {
+    color: red;
+}
+
+.green-color {
+    color: green;
+}
+
+.chartreuse-color {
+    color: chartreuse
+}
