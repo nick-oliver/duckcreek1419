@@ -1,167 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: RobotoMedium;
-    src: url(fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
     font-family: RobotoBold;
-    src: url(fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Header area */
+.header {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+/* Upper-left logo */
+.logo-left {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 250px;
+    height: auto;
+}
+
+/* Upper-center logo */
+.logo-center {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 210px;
+}
+
+img {
+    width: 60%;
+    margin: calc(20%/6);
+}
+
+h1 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Roboto;
+}
+
+h2 {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Roboto;
+}
+
+.page-centered-text {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Roboto;
 }
 
 .red-color {
     color: red;
 }
 
-body {
-    margin: 0;
-}
-
-.header {
-    background-color: #f3f3f3;
-    display: flex;
-    align-items: baseline;
-    font: ;
-    padding: .5rem;
-    gap: 1rem;
-}
-
-.link {
-    background: none;
-    border: none;
-    text-decoration: none;
-    color: #260680;
-    font-family: RobotoBold;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 0;
-}
-
-.dropdown.active > .link,
-
-.link:hover {
-    color: black;
-}
-
-.dropdown {
-    position:relative
-}
-
-.dropdown-menu {
-    position: absolute;
-    left: 0;
-    top: calc(100% + .25rem);
-    background-color: white;
-    padding: .75rem;
-    border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-
-.dropdown.active > .link + .dropdown-menu {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.information-grid {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap: 2rem;
-}
-
-.dropdown-links {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-}
-
-.login-form > input {
-    margin-bottom: .5rem;
-}
-
-.DefaultPagefont {
-  font-family: Trebuchet MS;
-}
-.indent-div {
-  width:  100%;
-  padding: 5px;
-  border:  5px solid black;
-  margin: 250px;
-}
-.center-div {
-  width: 100%;
-  text-align: center;
-}
-.center {
-    display: block;
-    text-align: center;
-    width: 60%;
-}
-table, th, td {
-  margin-left:auto;
-  margin-right:auto;
-}
-.image-container {
-  display: flex;
-  justify-content: center; /* Centers the images horizontally */
-  padding-left: 20px;     /* Adds padding to the left of the container */
-  gap: 10px;              /* Adds space between individual images */
-}
-
-.image-container img {
-  /* Optional: Add some basic styling to the images */
-  max-width: 100%;
-  height: auto;
-  /* If needed, specific padding on the images can be added here too */
-}
-
-.image-container wm_img {
-  /* Optional: Add some basic styling to the images */
-  height: 50%;
-  width: 50%;
-  border: 0;
-  /* max-width: 100%;
-  height: auto; */
-  /* If needed, specific padding on the images can be added here too */
-}
-
-.page-centered-text {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-family: Trebuchet MS;
-}
-.h1 {
-    padding-top: 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-family: Trebuchet MS;
-}
-
-.h1-large {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: Trebuchet MS;
-}
-
-.legal-footer {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 8px;
-    font-family: Trebuchet MS;
+@media (max-width: 768px) {
+    .logo-left {
+        display: none;
+    }
 }
