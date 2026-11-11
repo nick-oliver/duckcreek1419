@@ -98,3 +98,23 @@ h2 {
         display: none;
     }
 }
+
+.image-row {
+  display: flex;
+  justify-content: center; /* Centers the row horizontally */
+  align-items: center;     /* Centers images vertically if they have different heights */
+  gap: 16px;               /* Adds clean spacing between pictures */
+  flex-wrap: wrap;         /* Lets images wrap to a new centered line on mobile */
+}
+
+.image-row img {
+  max-width: 100%;
+  height: auto;
+  /* Optional: set a fixed width or height so they look uniform */
+  width: 200px; 
+}
+
+/* img.large-pic {
+  width: 600px; Increases width to a fixed pixel size
+  height: auto; Maintains original aspect ratio
+} */
